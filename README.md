@@ -33,8 +33,6 @@
 | Service3 | moei-U8q | ООО ФНС                  | service   |
 | Manager  | QTipP_6Y | Manager                  | managers  |
 
-### Рекомендации
-
 #### При создании нового пользователя:
 1. Добавьте его в соответствующую группу
 2. Укажите его first_name в модели User
