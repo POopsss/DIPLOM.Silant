@@ -127,9 +127,11 @@ class TruckViewSet(viewsets.ModelViewSet):
             )
             if order_by:
                 self.queryset = self.queryset.order_by(order_by)
+            else:
+                self.queryset = self.queryset.order_by('serialNumber')
             if self.request.query_params.get('limit'):
                 limit = int(self.request.query_params.get('limit'))
-                self.queryset = self.queryset[:limit]
+            return self.queryset[:limit]
         return self.queryset
 
     def create(self, request, *args, **kwargs):
@@ -206,9 +208,11 @@ class DeliveryAgreementViewSet(viewsets.ModelViewSet):
                     order_by = f'truck__{order_by}'
                 order_by = f'{direction_order}{order_by}'
                 self.queryset = self.queryset.order_by(order_by)
+            else:
+                self.queryset = self.queryset.order_by('dateOfShipment')
             if self.request.query_params.get('limit'):
                 limit = int(self.request.query_params.get('limit'))
-                self.queryset = self.queryset[:limit]
+                return self.queryset[:limit]
         return self.queryset
 
     def create(self, request, *args, **kwargs):
@@ -307,7 +311,7 @@ class MaintenanceViewSet(viewsets.ModelViewSet):
                 self.queryset = self.queryset.order_by(order_by)
             if self.request.query_params.get('limit'):
                 limit = int(self.request.query_params.get('limit'))
-                self.queryset = self.queryset[:limit]
+                return self.queryset[:limit]
         return self.queryset
 
     def create(self, request, *args, **kwargs):
@@ -391,8 +395,7 @@ class ReclamationViewSet(viewsets.ModelViewSet):
                 self.queryset = self.queryset.order_by(order_by)
             if self.request.query_params.get('limit'):
                 limit = int(self.request.query_params.get('limit'))
-                self.queryset = self.queryset[:limit]
-
+                return self.queryset[:limit]
         return self.queryset
 
     def create(self, request, *args, **kwargs):
