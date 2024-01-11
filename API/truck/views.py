@@ -472,7 +472,6 @@ class HandbookViewSet(viewsets.ModelViewSet):
                 obj.update(**p)
             except IntegrityError:
                 return Response([key])
-        obj[0].save()
         return Response('update')
 
 
