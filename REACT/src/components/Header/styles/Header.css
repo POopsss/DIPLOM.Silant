@@ -1,0 +1,57 @@
+header {
+    width: 100%;
+    height: 9rem;    
+    background-color: var(--color-secondary-2);
+    color: var(--color-primary);
+}
+
+.header {
+    display: grid;
+    height: 100%;
+    margin: 0 1rem;
+    grid-template: 7fr 3fr / 6rem 1fr auto;
+    gap: 0.2rem;
+}
+
+.logo-wraper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-wraper:hover {
+    cursor: pointer;
+}
+
+.logo {
+    height: 4rem;
+    margin-top: 1.6rem;
+    background-image: url("../../../media/logo/Logotype-accent-RGB.svg"), url("../../../media/logo/Logotype-accent-RGB-red.svg");
+    background-position: center 0.3rem, center 0.7rem;
+    background-repeat: no-repeat;
+}
+
+.logo-2 {
+    background-image: url("../../../media/logo/Logotype-RGB.svg"), url("../../../media/logo/Logotype-R.svg");
+    background-position: center 0.3rem, center 0.5rem;
+    background-repeat: no-repeat;
+    height: 2rem;
+}
+
+.telegram-header {
+    align-self: start;
+    justify-self: center;
+    margin-top: 2em;
+}
+
+.user-panel {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.header-title {
+    display: flex;
+    grid-column: 1 / 4;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--color-primary);
+}

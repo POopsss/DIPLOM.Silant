@@ -1,0 +1,4 @@
+.girignore
+node_modules
+__pycache__
+.idea

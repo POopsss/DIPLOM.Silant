@@ -1,0 +1,34 @@
+.object-table {
+    border: 2px solid var(--color-primary);
+}
+
+.object-table tbody {
+    display: grid;
+}
+
+.object-table tbody tr {
+    display: grid;
+    min-width: max-content;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    padding: 0.4em 0;
+}
+
+.object-table tbody tr:nth-child(2n) {
+    background-color: var(--color-primary);
+}
+
+.object-table tbody tr:nth-child(2n) td {
+    color: var(--color-secondary-2);
+}
+
+.object-table tbody tr td:first-child {
+    font-family: "Astra Sans Bold";
+    text-align: end;
+}
+
+/* .object-table tbody tr td {
+    white-space: nowrap;
+    padding: 0.2rem;
+    white-space: pre;
+} */

@@ -1,0 +1,22 @@
+main {
+    min-height: calc(100vh - 19rem);
+}
+
+main input {
+    height: 1.6rem;
+}
+
+main button {
+    background-color: var(--color-primary);
+    height: auto;
+    color: var(--color-secondary-2);
+    padding: 0.3rem 1rem;
+}
+
+main label {
+    font-size: 1.4rem;
+}
+
+main h1 {
+    text-align: center;
+}

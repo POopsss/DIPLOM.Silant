@@ -1,0 +1,49 @@
+.object-info td {
+    padding: 0.6rem 2rem;
+}
+
+.object-info tbody {
+    display: grid;
+}
+
+.object-info tbody tr {
+    display: grid;
+    min-width: max-content;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    padding: 0.4em 0;
+}
+
+.object-info tbody tr:nth-child(2n - 1) {
+    background-color: var(--color-primary);
+}
+
+.object-info tbody tr:nth-child(2n - 1) td {
+    color: var(--color-secondary-2);
+}
+
+.object-info tbody tr td:first-child {
+    font-family: "Astra Sans Bold";
+    text-align: end;
+}
+
+.info-action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.info-action button {
+    font-size: 1.2rem;
+    padding: 0 4rem;
+}
+
+.button-del {
+    background-color: var(--color-secondary-1);
+}
+
+.button-post {
+    font-family: "Astra Sans Bold";
+    background-color: var(--color-secondary-4);
+}

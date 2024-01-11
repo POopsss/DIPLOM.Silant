@@ -1,0 +1,54 @@
+.swagger-ui > div:first-child {
+    display: none;
+}
+
+.wrapper section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.opblock-tag a {
+    background-color: var(--color-primary);
+    color: var(--color-secondary-2);
+    font-size: 1.5rem;
+    font-family: "Astra Sans Bold";
+}
+
+.opblock-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper h4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper h4 span {
+    font-size: 1.5rem;
+    font-family: "Astra Sans Bold";
+}
+
+.opblock-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-line-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    height: 1.5rem;
+}
+
+button.opblock-summary-control {
+    border: none;
+}
+
+.no-margin {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}

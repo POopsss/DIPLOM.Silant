@@ -1,0 +1,17 @@
+footer {
+    height: 5rem;
+    margin-top: 3rem;
+    background-color: var(--color-secondary-1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 1em;
+}
+
+.footer h4 {
+    color: var(--color-secondary-2);
+}

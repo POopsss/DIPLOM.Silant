@@ -1,0 +1,50 @@
+.update-object {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.update-object p {
+    font-family: "Astra Sans Bold";
+    font-size: 1rem;
+    text-align: end;
+}
+
+.update-object p span {
+    font-size: 1.2rem;
+}
+
+.update-object table {
+    border-collapse: collapse;
+    padding: 0;
+}
+
+.update-object table td {
+    font-family: "Astra Sans Bold";
+    padding: 0.6rem 2rem;
+}
+
+.update-object table td:nth-child(2n-1) {
+    font-size: 1.2rem;
+}
+
+.update-object table tr:nth-child(2n-1) {
+    background-color: var(--color-primary);
+}
+
+.update-object table tr:nth-child(2n-1) td {
+    color: var(--color-secondary-2);
+}
+
+.update-object table input, select{
+    /* width: 20rem; */
+    width: 100%;
+}
+
+.update-object table input[type="date"]{
+    height: 1.8rem;
+    width: 100%;
+    padding: 0 0.1rem;
+}

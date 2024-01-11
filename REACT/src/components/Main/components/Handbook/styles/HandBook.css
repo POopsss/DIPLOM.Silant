@@ -1,0 +1,68 @@
+.handbook-search {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.handbook-search-container select {
+    width: 20rem;
+}
+
+.handbook-search-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.handbook-search-container label {
+    margin-left: auto;
+    margin-right: 0;
+    color: var(--color-secondary-2);
+}
+
+.handbook-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: calc(100% - 4rem);
+    margin: 2rem;
+}
+
+.handbook-info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.handbook-info-content table {
+    border-collapse: collapse;
+    min-width: 100%;
+}
+
+.handbook-info-content table td {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.handbook-info-content table tr {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.handbook-info-content table td:first-child {
+    font-family: "Astra Sans Bold";
+}
+
+.handbook-info-content table tr:nth-child(2n-1) td {
+    background-color: var(--color-primary);
+    color: var(--color-secondary-2);
+}
+
+.handbook-info-content table tr:last-child td:last-child {
+    height: 5rem;
+}

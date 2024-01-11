@@ -1,0 +1,20 @@
+.login {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.login input {
+    text-align: center;
+}
+
+.login-container-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.login-button {
+    background: var(--color-primary);
+}

@@ -1,0 +1,18 @@
+.telegram-link {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.telegram-link:hover {
+    cursor: pointer;
+}
+
+.telegram-link img {
+    width: 1.5em;
+}
+
+.hotline {
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+}

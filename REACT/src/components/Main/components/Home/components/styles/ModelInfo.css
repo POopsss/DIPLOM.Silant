@@ -1,0 +1,65 @@
+.list-of-objects-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.list-of-objects-table-container button {
+    width: 100%;
+}
+
+.list-of-objects-table-container h3 {
+    text-align: start;
+}
+
+.list-of-objects-table-container div {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-of-objects-table-container table {
+    border-collapse: collapse;
+}
+.list-of-objects-table-container table td {
+    text-align: center;
+    white-space: nowrap;
+    padding: 0.6rem;
+    white-space: pre;
+}
+
+.list-of-objects-table-container table thead {
+    background-color: var(--color-primary);
+}
+
+.list-of-objects-table-container table thead td {
+    color: var(--color-secondary-2);
+}
+
+.list-of-objects-table-container table tr:nth-child(2n) {
+    background-color: var(--color-primary);
+}
+
+.list-of-objects-table-container table tr:nth-child(2n) td {
+    color: var(--color-secondary-2);
+}
+
+.list-of-objects-table-container table tbody tr:last-child {
+    border-bottom: 0.4rem solid var(--color-secondary-3);
+}
+
+.list-of-objects-table-container table tbody tr:hover {
+    background-color: var(--color-secondary-1);
+}
+
+.list-of-objects-table-container table tbody tr:hover td {
+    color: var(--color-secondary-2);
+}
+
+.sort-direct {
+    color: var(--color-secondary-1) !important;
+}
+
+.sort-revers {
+    color: var(--color-secondary-4) !important;
+}
+
