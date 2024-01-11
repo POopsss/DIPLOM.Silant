@@ -11,8 +11,7 @@
     width: 1.5em;
 }
 
-.hotline {
-    width: 4rem;
-    height: 4rem;
-    background-color: red;
+.telegram-link svg {
+    width: 1.5em;
+    fill: var(--color-primary)
 }

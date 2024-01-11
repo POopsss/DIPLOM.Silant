@@ -15,3 +15,7 @@ footer {
 .footer h4 {
     color: var(--color-secondary-2);
 }
+
+.footer .telegram-link svg {
+    fill: var(--color-secondary-2)
+}
