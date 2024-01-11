@@ -131,7 +131,7 @@ class TruckViewSet(viewsets.ModelViewSet):
                 self.queryset = self.queryset.order_by('serialNumber')
             if self.request.query_params.get('limit'):
                 limit = int(self.request.query_params.get('limit'))
-            return self.queryset[:limit]
+                return self.queryset[:limit]
         return self.queryset
 
     def create(self, request, *args, **kwargs):

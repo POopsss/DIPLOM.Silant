@@ -177,7 +177,7 @@ table {
     overflow-x: scroll;
     max-width: max-content;
     white-space: nowrap;
-    max-height: 60vh;
+    max-height: 80vh;
 }
 
 thead tr {

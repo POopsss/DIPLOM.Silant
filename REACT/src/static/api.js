@@ -1,3 +1,5 @@
+import { json } from "react-router-dom"
+
 export const APIURL = "http://127.0.0.1:8000/"
 
 
@@ -12,9 +14,10 @@ export async function get(path, query, auth)
             headers: headers
         })
     .then((response) => {
-        return response.json()})
-    .then((json) => {
-        return json
+        if (response.status == 404) {
+            return false
+        }        
+        return response.json()        
     })
 }
 

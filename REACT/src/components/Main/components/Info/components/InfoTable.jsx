@@ -82,6 +82,9 @@ export default function InfoTable(props) {
                 <tr key={id}>
                     <td>{field.name}</td>
                     <td 
+                    className={field.handbook & !Array.isArray(field.field.split("__").reduce((obj, key) => obj[key], data)) ? 
+                    "pointer"    
+                    :""}
                     onClick={field.handbook & !Array.isArray(field.field.split("__").reduce((obj, key) => obj[key], data)) ? () => 
                     location.href = location.origin + "/handbook/?lookup=" + field.field.split("__").reduce((obj, key) => obj[key], data) 
                     : () => {}}
@@ -89,7 +92,8 @@ export default function InfoTable(props) {
                         {
                         Array.isArray(field.field.split("__").reduce((obj, key) => obj[key], data)) ?
                         field.field.split("__").reduce((obj, key) => obj[key], data).map((value, id) => 
-                        <p key={id} 
+                        <p 
+                        key={id}
                         onClick={() => location.href = location.origin + "/handbook/?lookup=" + value }
                         >
                             {value}

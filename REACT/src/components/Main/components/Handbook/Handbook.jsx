@@ -87,7 +87,7 @@ export default function Handbook() {
         if (!(request == 'create')) {
             set_fieldError(Object.keys(request))
         } 
-        // else { location.href = location.origin }
+        else { location.href = location.origin }
     }
 
     async function buttonPutClick() {
@@ -95,7 +95,7 @@ export default function Handbook() {
         if (!(request == 'update')) {
             set_fieldError(request)
         } 
-        // else { location.href = location.origin }
+        else { location.href = location.origin }
     }
 
     React.useEffect(() => {
